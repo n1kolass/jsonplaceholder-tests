@@ -120,23 +120,6 @@ public class TestPostsEndpointRESTAPI {
                 equalTo(HttpStatus.SC_OK));
     }
 
-//    /**
-//     * Testing request: GET /posts/101 HTTP/1.1
-//     * Response status code must be "404 Not Found".
-//     */
-//    @Test
-//    public void testGetPostsWithPostNumber101() throws IOException {
-//
-//        HttpUriRequest request = new HttpGet("https://jsonplaceholder.typicode.com/posts/101");
-//        System.out.println("Executing request: " + request.getRequestLine());
-//
-//        CloseableHttpResponse httpResponse = HttpClientBuilder.create().build().execute(request);
-//        System.out.println("Response is: " + httpResponse.getStatusLine());
-//        assertThat(
-//                httpResponse.getStatusLine().getStatusCode(),
-//                equalTo(HttpStatus.SC_NOT_FOUND));
-//    }
-
     /**
      * Testing reception of the <id> userId posts.
      * Testing request: GET /posts?userId=<id> HTTP/1.1
