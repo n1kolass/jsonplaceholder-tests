@@ -40,7 +40,6 @@ public class TestPostsEndpointRESTAPI {
         try {
             HttpEntity entity = response.getEntity();
             if (entity != null) {
-                long len = entity.getContentLength();
                 Gson gson = new GsonBuilder().setPrettyPrinting().create();
                 ContentType contentType = ContentType.getOrDefault(entity);
                 Charset charset = contentType.getCharset();
